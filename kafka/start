@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Start ZooKeeper
+cd ./src/components/ZooKeeper/
+./start
+cd ../../../
+
+echo "Waiting for ZooKeeper to start Kafka..."
+
+while ! nc -z 10.0.100.22 2181; do   
+  printf '.'
+  sleep 1 
+done
+
+echo "ZooKeeper launched"
+
+# Start Server Kafka
+cd ./src/components/Server/
+./start
+cd ../../../

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+gnome-terminal -x sh -c 'cd ./kafka; bash start_gnome'
+gnome-terminal -x sh -c 'cd ./logstash; bash start_gnome'
+gnome-terminal -x sh -c 'cd ./spark; bash start_gnome'
+gnome-terminal -x sh -c 'cd ./elasticsearch; bash start_gnome'
+gnome-terminal -x sh -c 'cd ./kibana; bash start_gnome'
+
+echo "Waiting for Kibana to start WebServer..."
+
+while ! nc -z 10.0.100.52 5601; do
+  printf '.'
+  sleep 1
+done
+
+echo "Kibana launched"
+sleep 15
+
+gnome-terminal --title="WebServer" -x sh -c 'cd ./webserver; bash start'
+xdg-open http://localhost:7654/

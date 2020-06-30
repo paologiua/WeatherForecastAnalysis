@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+cd ./kafka
+bash start &
+cd ..
+cd ./logstash
+bash start &
+cd ..
+cd ./spark
+bash start &
+cd ..
+cd ./elasticsearch
+bash start &
+cd ..
+cd ./kibana
+bash start &
+cd ..
+
+echo "Waiting for Kibana to start WebServer..."
+
+while ! nc -z 10.0.100.52 5601; do
+  printf '.'
+  sleep 1
+done
+
+echo "Kibana launched"
+sleep 15
+
+xdg-open http://localhost:7654/
+
+cd ./webserver; 
+bash start
+

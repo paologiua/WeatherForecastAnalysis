@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Build image
+docker build ../python/ --tag project:python
+
+# Stop previuos container 
+docker stop accuWeatherWrapper
+
+# Remove previuos container 
+docker container rm accuWeatherWrapper
+
+# Stop previuos container 
+docker stop theWeatherChannelWrapper
+
+# Remove previuos container 
+docker container rm theWeatherChannelWrapper
+
+echo "Waiting for Logstash to start the wrappers..."
+
+while ! nc -z 10.0.100.8 5000; do   
+  printf '.'
+  sleep 1 
+done
+
+echo "Logstash launched"
+
+docker run -d --network tap -e PYTHON_APP=accuweather_wrapper.py --name accuWeatherWrapper -it project:python $1 $2
+
+sleep 30
+docker run -d --network tap -e PYTHON_APP=theweatherchannel_wrapper.py --name theWeatherChannelWrapper -it project:python $1 $2

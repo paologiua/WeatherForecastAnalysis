@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+rm -f service
+php -S localhost:7654

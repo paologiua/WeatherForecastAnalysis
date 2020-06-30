@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+gnome-terminal -x sh -c "ls; bash" & disown && sleep 3 &&  wmctrl -i -Y  $(wmctrl -l | awk -F' ' 'END{print $1}')
