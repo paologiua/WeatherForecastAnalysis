@@ -16,15 +16,15 @@ Per la corretta esecuzione di Weather Forecast Analysis occore installare:
 Facoltativo:
 - Gnome Terminal.
 Infine occore eseguire il file script 'build' posizionato nella cartella principale del progetto.
-$ ./build
+# $ ./build
 # Prima esecuzione
 Soddisfatta la premessa, si potrà decidere se eseguire il progetto in background o meno.
 # Background
 Per questa modalità di esecuzione, basterà eseguire il file script 'start', posizionato nella cartella principale del progetto.
-$ ./start
+# $ ./start
 # In Terminale (occorre Gnome Terminal)
 Per questa modalità di esecuzione, basterà eseguire il file script 'start_gnome', posizionato nella cartella principale del progetto.
-$ ./start_gnome
+# $ ./start_gnome
 # Stop esecuzione
 Per fermare l'esecuzione di Weather Forecast Analysis, richiamare il comando sottostante nella cartella principale del progetto e CTRL + C sul terminale del web server PHP.
-$ ./stop
+# $ ./stop
