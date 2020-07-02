@@ -8,7 +8,7 @@ Visualizzare i dati ottenuti in una dashboard, così da essere facilmente consul
 La dashboard viene visualizzata da una piccola applicazione Web.
 
 # Guida d'uso
-# Premessa
+<p>Premessa</p>
 Per la corretta esecuzione di Weather Forecast Analysis occore installare:
 - Docker;
 - Netcat;
