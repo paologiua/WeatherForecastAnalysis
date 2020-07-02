@@ -27,6 +27,7 @@ Facoltativo:
 
 ## Esecuzione
 **Soddisfa i requisiti prima di eseguire WeatherForecastAnalysis**
+
 L'esecuzione può avvenire in due modalità:
 #### Background
 Usa lo script **'start'**, posizionato nella cartella principale del progetto, per l'esecuzione in background.
