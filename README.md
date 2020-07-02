@@ -1,6 +1,6 @@
 # WeatherForecastAnalysis
 ## Cos'è?
-WeatherForecastAnalysis è il progetto universitario dello studente **Giua Paolo** (X81000576) della facoltà di informatica dell'Università di Catania.
+WeatherForecastAnalysis è un progetto universitario dello studente **Giua Paolo** (X81000576) della facoltà di informatica dell'Università degli studi di Catania.
 
 Consiste nell'acquisizione dei dati meteo al fine di fare previsioni.
 
