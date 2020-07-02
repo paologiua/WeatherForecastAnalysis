@@ -41,7 +41,7 @@ Usa lo script **'start_gnome'**, posizionato nella cartella principale del proge
 $ ./start_gnome
 ```
 ## Stop esecuzione
-Per fermare WeatherForecastAnalysis,usa lo script **'stop'** e richiama **CTRL + C** sul terminale del web server PHP.
+Per fermare WeatherForecastAnalysis, usa lo script **'stop'** e richiama **CTRL + C** sul terminale del web server PHP.
 ```
 $ ./stop
 ```
