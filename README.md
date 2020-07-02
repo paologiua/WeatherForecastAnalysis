@@ -1,10 +1,13 @@
 # WeatherForecastAnalysis
 ## Cos'è?
 WeatherForecastAnalysis è il progetto universitario dello studente **Giua Paolo** (X81000576) della facoltà di informatica dell'Università di Catania.
+
 Consiste nell'acquisizione dei dati meteo al fine di fare previsioni.
+
 Le previsioni ottenute vengono poi associate ai dati reali e valutate.
 ## Obiettivo
 Visualizzare i dati ottenuti in una dashboard, così da essere facilmente consultabili e confrontabili.
+
 La dashboard viene visualizzata da una piccola applicazione Web.
 
 # Struttura
@@ -37,6 +40,7 @@ $ ./start
 Nel terminale sarà visibile solo il log del server integrato di Php.
 #### Terminale (Gnome Terminal necessario)
 Questa modalità crea più schede di Gnome Terminal per visualizzare cosa accade in ciascun container.
+
 Usa lo script **'start_gnome'**, posizionato nella cartella principale del progetto.
 ```
 $ ./start_gnome
