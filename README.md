@@ -1,6 +1,6 @@
 # WeatherForecastAnalysis
 ## Cos'è?
-Weather Forecast Analysis è il progetto universitario dello studente Giua Paolo (X81000576) della facoltà di informatica dell'Università di Catania.
+WeatherForecastAnalysis è il progetto universitario dello studente Giua Paolo (X81000576) della facoltà di informatica dell'Università di Catania.
 Consiste nell'acquisizione dei dati meteo al fine di fare previsioni.
 Le previsioni ottenute vengono poi associate ai dati reali e valutate.
 ## Obiettivo
@@ -9,12 +9,14 @@ La dashboard viene visualizzata da una piccola applicazione Web.
 
 # Guida d'uso
 ## Premessa
-Per la corretta esecuzione di Weather Forecast Analysis occore installare:
-- Docker;
-- Netcat;
-- Php.
+Per la corretta esecuzione di WeatherForecastAnalysis è necessario:
+* Docker;
+* Netcat;
+* Php;
+* Scaricare [kafka_2.12-2.4.1.tgz](https://drive.google.com/file/d/1xXGH_Ee8MhI0GUlSUVHK_k2sEPxpaEDj/view?usp=sharing) nella cartella kafka/src/setup del progetto;
+* Scaricare [spark-2.4.5-bin-hadoop2.7.tgz](https://drive.google.com/file/d/1QPWhdRXWD3SJ6pSYOk1ZUfIL0k9_SM_X/view?usp=sharing) nella cartella spark/src/setup del progetto.
 Facoltativo:
-- Gnome Terminal.
+* Gnome Terminal.
 Infine occore eseguire il file script 'build' posizionato nella cartella principale del progetto.
 ```
 $ ./build
