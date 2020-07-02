@@ -14,7 +14,7 @@ La dashboard viene visualizzata da una piccola applicazione Web.
 ![alt text](doc/diagram.png)
 
 # Guida d'uso
-#### Requisiti
+## Requisiti
 Per la corretta esecuzione di WeatherForecastAnalysis è necessario:
 * Docker;
 * Netcat;
