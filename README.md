@@ -7,6 +7,9 @@ Le previsioni ottenute vengono poi associate ai dati reali e valutate.
 Visualizzare i dati ottenuti in una dashboard, così da essere facilmente consultabili e confrontabili.
 La dashboard viene visualizzata da una piccola applicazione Web.
 
+# Struttura
+![alt text](doc/diagram.png)
+
 # Guida d'uso
 #### Requisiti
 Per la corretta esecuzione di WeatherForecastAnalysis è necessario:
@@ -38,7 +41,7 @@ Usa lo script **'start_gnome'**, posizionato nella cartella principale del proge
 $ ./start_gnome
 ```
 ## Stop esecuzione
-Per fermare l'esecuzione di WeatherForecastAnalysis, richiamare il comando sottostante nella cartella principale del progetto e CTRL + C sul terminale del web server PHP.
+Per fermare WeatherForecastAnalysis,usa lo script **'stop'** e richiama **CTRL + C** sul terminale del web server PHP.
 ```
 $ ./stop
 ```
