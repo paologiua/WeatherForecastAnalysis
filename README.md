@@ -14,13 +14,14 @@ Per la corretta esecuzione di WeatherForecastAnalysis è necessario:
 * Netcat;
 * Php;
 * Scaricare [kafka_2.12-2.4.1.tgz](https://drive.google.com/file/d/1xXGH_Ee8MhI0GUlSUVHK_k2sEPxpaEDj/view?usp=sharing) nella cartella kafka/src/setup del progetto;
-* Scaricare [spark-2.4.5-bin-hadoop2.7.tgz](https://drive.google.com/file/d/1QPWhdRXWD3SJ6pSYOk1ZUfIL0k9_SM_X/view?usp=sharing) nella cartella spark/src/setup del progetto.
-Facoltativo:
-* Gnome Terminal.
-Infine occore eseguire il file script 'build' posizionato nella cartella principale del progetto.
+* Scaricare [spark-2.4.5-bin-hadoop2.7.tgz](https://drive.google.com/file/d/1QPWhdRXWD3SJ6pSYOk1ZUfIL0k9_SM_X/view?usp=sharing) nella cartella spark/src/setup del progetto;
+* Eseguire il file script 'build' posizionato nella cartella principale del progetto.
 ```
 $ ./build
 ```
+Facoltativo:
+* Gnome Terminal.
+
 ## Prima esecuzione
 Soddisfatta la premessa, si potrà decidere se eseguire il progetto in background o meno.
 ## Background
